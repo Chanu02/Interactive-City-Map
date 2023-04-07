@@ -1,0 +1,955 @@
+body{
+    background-color: bisque;
+    font-family:Tahoma;
+}
+
+.container{
+    padding:2em;
+    width:90%;
+    display:flex;
+
+}
+.mapandcar{
+    position:relative;
+    margin-bottom:-21em;
+}
+.map{
+    width: 691px;
+    border:solid red;
+    position:absolute;
+}
+/* Prep CSS */
+.pin{
+    width:70px;
+}
+#roads{
+    width:100%;
+    
+}
+
+
+/*Tim CSS*/
+.tim{
+    font-size: 20pt;
+    border:solid;
+    text-align: center;
+    background-color:rgb(0, 188, 0);
+}
+.tim:hover #timpin{
+    opacity:100%;
+    top:2em;
+    transition: top, 300ms ease-in-out
+}
+.timbutton:hover{
+    background-color: green;
+}
+.timbutton:active{
+    background-color: gray;
+}
+
+#timpin{
+    width:70px;
+    top:-2.5em;
+    left:2.5em;
+    position:absolute;
+    
+    
+}
+.timbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+/*Johns CSS*/
+.john{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.john:hover #johnpin{  
+top:2em; 
+transition: top, 300ms ease-in-out
+}
+.johnbutton:hover{
+    background-color: green;
+}
+.johnbutton:active{
+    background-color: gray;
+}
+#johnpin{
+    width:70px;
+    top:-3em;
+    left:25em;
+    position:absolute;
+}
+.johnbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+/*Robert CSS*/
+.robert{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.robert:hover #robertpin{
+    top:1.9em;
+    transition: top, 300ms ease-in-out;
+    
+}
+.robertbutton:hover{
+    background-color: green;
+}
+.robertbutton:active{
+    background-color: gray;
+}
+#robertpin{
+    width:70px;
+    top:-3em;
+    left:11.3em;
+    position:absolute;
+}
+.robertbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+/*Vivian CSS*/
+.vivian{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.vivian:hover #vivianpin{
+    top:14.5em;
+    transition: top, 300ms ease-in-out;
+}
+.vivianbutton:hover{
+    background-color: green;
+}
+.vivianbutton:active{
+    background-color: gray;
+}
+#vivianpin{
+    width:70px;
+    top:-2em;
+    left: 25.3em;
+    position:absolute;
+}
+.vivianbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+/*Niki CSS*/
+.niki{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.niki:hover #nikipin{
+    transition: top, 300ms ease-in-out;
+    top:16.5em;
+}
+.nikibutton:hover{
+    background-color: green;
+}
+.nikibutton:active{
+    background-color: gray;
+}
+#nikipin{
+    width:70px;
+    top:-2em;
+    left:3em;
+    position:absolute;
+}
+.nikibutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+/*Steven CSS*/
+.steven{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.steven:hover #stevenpin{
+    transition: top, 300ms ease-in-out;
+    top:10.5em;
+    
+}
+.stevenbutton:hover{
+    background-color: green;
+}
+.stevenbutton:active{
+    background-color: gray;
+}
+#stevenpin{
+    width:70px;
+    top:-2.5em;
+    left:3em;
+    position:absolute;   
+}
+.stevenbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+/*Mohammad CSS*/
+.mohammad{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.mohammad:hover #mohammadpin{
+    transition: top, 300ms ease-in-out;
+    top:6.5em;
+    
+}
+.mohammadbutton:hover{
+    background-color: green;
+}
+.mohammadbutton:active{
+    background-color: gray;
+}
+#mohammadpin{
+    width:70px;
+    top:-2em;
+    left:17em;
+    position:absolute;  
+}
+.mohammadbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+/*Gas Station CSS*/
+.petrolyum{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.petrolyum:hover #petrolyumpin{
+    transition: top, 300ms ease-in-out;
+    top:22.75em;   
+}
+.petrolyumbutton:hover{
+    background-color: green;
+}
+.petrolyumbutton:active{
+    background-color: gray;
+}
+#petrolyumpin{
+    width:70px;
+    top:-2em;
+    left:22.5em;
+    position:absolute;   
+}
+.petrolyumbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+
+/* Park CSS */
+.park{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+.park:hover #parkpin{
+    transition: top, 300ms ease-in-out;
+    top:10.75em;
+    
+}
+.parkbutton:hover{
+    background-color: green;
+}
+.parkbutton:active{
+    background-color: gray;
+    
+}
+#parkpin{
+    width:70px;
+    top:-2em;
+    left:10.75em;
+    position:absolute;  
+}
+.parkbutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+
+/* Park CSS */
+.summary{
+    font-size: 20pt;
+    border:solid;
+    text-align:center;
+    background-color:rgb(0, 188, 0);
+}
+
+.summarybutton:hover{
+    background-color: green;
+}
+.summarybutton:active{
+    background-color: gray;
+    
+}
+.summarybutton {
+    border:none;
+    background-color:rgb(0, 188, 0);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-size:20pt;
+    margin:auto;
+    padding: .20em 10px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Car Animation's */
+
+/* LIME */
+#limecar{
+    width:17%;
+    position:relative;
+    top:32.4em;
+    left:32.5em;
+    opacity:0;
+}
+.johnbutton:active, #limecar{
+    animation: linear limejohn;
+    animation-duration: 10s;
+    animation-delay:2s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes limejohn{
+    0% {
+        left: 32.5em;
+        opacity: 0;
+    }
+    2%{
+        left: 32.5em;
+        opacity: 1;
+    }
+    25% {
+        top: 4em;
+        opacity: 1;
+        left:32.5em;
+        transform: rotate(0deg);
+    }
+
+    43% {
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+    44% {
+        left:35.9em;
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+    45%{
+        opacity:0;
+    }
+    99% {
+        left:34.5em;
+        top:3em;
+        opacity:0;
+    }
+}
+
+/* YELLOW */
+#yellowcar{
+    width:14%;
+    position:relative;
+    top:5.8em;
+    left:37.6em;
+    transform: rotate(270deg);
+    opacity:0;
+}
+.mohammadbutton:active, #yellowcar{
+    animation: yellowmo;
+    animation-duration: 10s;
+    animation-delay:12s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes yellowmo{
+    2%{
+        opacity: 1;
+    }
+10%{
+top:5.8em;
+left:37.6em;
+}
+50%{
+    top:5.8em;
+    left:20.2em;
+    transform:rotate(270deg);
+}
+53% {
+    transform:rotate(360deg);
+}
+60% {
+    top: 2.7em;
+    left: 20.2em;
+}
+65% {
+    transform: rotate(450deg);
+}
+69% {
+    opacity:1;
+}
+70% {
+    top: 2.7em;
+    left:23em;
+    opacity:0;
+}
+71% {
+    transform:rotate(450deg);
+}
+99% {
+    opacity:0;
+}
+}
+
+/* RED */
+#dragcar{
+    width:10%;
+    position:relative;
+    top:-18.5em;
+    left:32.4em;
+    transform: rotate(180deg);
+    opacity:0;
+}
+.petrolyumbutton:active, #dragcar{
+    animation: linear redcar;
+    animation-duration: 10s;
+    animation-delay:48s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes redcar{
+    2%{
+        opacity: 1;
+    }
+20%{
+    top:11.5em;
+    left:32.4em;
+    transform: rotate(180deg);
+}
+30%{
+    left: 30.5em;
+    top:17.5em;
+    transform: rotate(270deg);
+    opacity: 1;
+}
+31%{
+    opacity:0;
+}
+100%{
+    opacity:0;
+}
+}
+
+/* AQUA */
+#aquacar{
+    width:14%;
+    position:relative;
+    top:11.1em;
+    left:-1.5em;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+.petrolyumbutton:active, #aquacar{
+    animation: linear aquacar;
+    animation-duration: 6s;
+    animation-delay:24s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes aquacar{
+2%{
+    opacity: 1;
+}
+11%{
+    opacity:1;
+}
+20%{
+    top:11.1em;
+    opacity:0.2;
+}
+21%{
+    opacity:0.2;
+}
+24%{
+    transform:rotate(90deg);
+    opacity:.2;
+}
+28%{
+    top:11.1em;
+    left: 24.5em;
+    transform:rotate(70deg);
+    opacity:1;
+  opacity:1;
+}
+43%{
+    left:27.7em;
+    transform:rotate(-65deg);
+}
+55%{
+    top:2em;
+    transform:rotate(-170deg);
+}
+70%{
+    top:7em;
+    left: 18em;
+}
+74%{
+    top: 16em;
+    left:18em;
+}
+95%{
+    top:16em;
+    left:18em;
+    opacity:1;
+}
+96%{
+    transform:rotate(-180deg);
+    top:16em;
+    left:18em;
+    opacity:0;
+}
+}
+
+/* BLUE */
+#bluecar{
+    width:14%;
+    position:relative;
+    top:-22.7em;
+    left:-1.5em;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+.petrolyumbutton:active, #bluecar{
+    animation: linear bluecar;
+    animation-duration: 10s;
+    animation-delay:60s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes bluecar{
+ 2%{
+    opacity:0;
+ }
+ 3%{
+    opacity:1;
+ }
+ 15%{
+    top:-22.7em;
+    left:4em;
+    transform: rotate(90deg);
+ }
+ 30%{
+    top:-21.7em;
+    left:7em;
+    transform: rotate(135deg);
+ }
+ 35%{
+    transform:rotate(180deg);
+ }
+ 75%{
+
+    transform: rotate(180deg);
+ }
+ 83%{
+    top:-7.0;
+    left:8em;
+    transform:rotate(150deg);
+ }
+ 90%{
+    top:-7.7em;
+    left:10em;
+    transform: rotate(90deg);
+ }
+ 98%{
+    top:-7.7em;
+    left:15em;
+    opacity:1;
+ }
+ 99%{
+    top:-7.7em;
+    left:15em;
+    opacity:0;
+ }
+}
+
+/* BROWN */
+#browncar{
+    width:14%;
+    position:relative;
+    top:-19.5em;
+    left:39em;
+    transform: rotate(-90deg);
+    opacity: 0;
+}
+.petrolyumbutton:active, #browncar{
+    animation: linear browncar;
+    animation-duration: 10s;
+    animation-delay:84s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes browncar{
+2%{
+    opacity: 1;
+}
+10%{
+    top:-20em;
+    left:33em;
+}
+31%{
+    transform:rotate(0deg);
+    top: -31em;
+    left:31em;
+}
+53%{
+    transform:rotate(-90deg);
+    top:-33.6em;
+    left:31em;
+}
+94%{
+    transform:rotate(-90deg);
+    top:-33.6em;
+    left:25.7em;
+    opacity:1;
+}
+98%{
+    transform:rotate(180deg);
+    top:-33.6em;
+    left:25.7em;
+    opacity:1;
+}
+99%{
+    top:-33.6em;
+    left:25.7em;
+    opacity:0;
+}
+}
+
+/* NAVY */
+#navycar{
+    width:14%;
+    position:relative;
+    top:-40em;
+    left:7.4em;
+    transform: rotate(180deg);
+    opacity: 0;
+}
+.petrolyumbutton:active, #navycar{
+    animation: navycar;
+    animation-duration: 10s;
+    animation-delay:72s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes navycar{
+2%{
+    opacity:1;
+}
+
+9%{
+    transform:rotate(180deg);
+    top:-35em;
+    left:7.4em;
+
+}
+16%{
+    transform:rotate(135deg);
+    top:-30em;
+    left:12em;
+}
+23%{
+    top:-29em;
+    left:14em;
+}
+30%{
+    transform: rotate(90deg);
+    top:-29em;
+    left: 17.7em;
+}
+37%{
+    top:-28em;
+    left:18.2em;
+}
+44%{
+    transform:rotate(180deg);
+    top:-23em;
+    left:18.2em;
+}
+51%{
+    top:-20.8em;
+    left: 22em;
+}
+58%{
+    transform:rotate(90deg);
+    top:-20.8em;
+    left:30em;
+}
+65%{
+    top:-20.1em;
+    left:31.4em;
+}
+72%{
+    transform: rotate(180deg);
+    top:-9.9em;
+    left:31.4em;
+}
+79%{
+    top:-6.5em;
+    left: 35.5em;
+    transform: rotate(90deg);
+
+}
+86%{
+    top:-6.5em;
+    left:37.5em;
+}
+98%{
+    top:-1.5em;
+    left:37.5em;
+    opacity:1;
+}
+99%{
+    top:-1.5em;
+    left:37.5em;
+    opacity:0;
+}
+
+}
+
+/* ORANGE */
+#orangecar{
+    width:14%;
+    position:relative;
+    top:-37em;
+    left:-1.5em;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+.petrolyumbutton:active, #orangecar{
+    animation: linear orangecar;
+    animation-duration: 10s;
+    animation-delay:84s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes orangecar{
+2%{
+    opacity: 1;
+}
+24%{
+    top:-37em;
+}
+48%{
+    top:-40em;
+
+}
+62%{
+    left:12em;
+}
+66%{
+    transform: rotate(90deg);
+    top:-37em;
+    left:18em;
+}
+80%{
+    transform: rotate(180deg);
+    top:-28.6em;
+    left:20.5em;
+}
+94%{
+    transform: rotate(90deg);
+    top:-28.6em;
+    left:24em;
+    opacity: 1;
+}
+98%{
+    transform: rotate(360deg);
+    top:-28.6em;
+    left:24em;
+    opacity: 1;
+}
+99%{
+    transform: rotate(360deg);
+    top:-28.6em;
+    left:24em;
+    opacity:0;
+}
+}
+
+/* PINK */
+#pinkcar{
+    width:14%;
+    position:relative;
+    top:-28em;
+    left:7.5em;
+    opacity:0;
+}
+.petrolyumbutton:active, #pinkcar{
+    animation: linear pinkcar;
+    animation-duration: 10s;
+    animation-delay:36s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes pinkcar{
+2%{
+    transform:rotate(30deg);
+    opacity:1;
+}
+11%{
+    left:7.5em;
+}
+18%{
+    transform: rotate(-30deg);
+    left: 4.5em;
+}
+29%{
+    left: 7.5em;
+}
+60%{
+top: 3.9em;
+}
+75%{
+    transform:rotate(90deg);
+    top:3.9em;
+    left: 7.5em;
+}
+96%{
+top:3.9em;
+left: -1em;
+opacity:1;
+}
+97%{
+transform:rotate(90deg);
+top:3.9em;
+left: -1em;
+opacity:0;
+}
+100%{
+    opacity:0;
+}
+}
+
+/* BOOM */
+#boom{
+    width:14%;
+    position:relative;
+    top:-41.5em;
+    left:24em;
+    opacity: 0;
+}
+.petrolyumbutton:active, #boom{
+    animation: linear boomcar;
+    animation-duration: 10s;
+    animation-delay:86s;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes boomcar{
+84%{
+    opacity:0;
+}
+88%{
+    opacity: 1;
+}
+99%{
+    opacity:0;
+}
+}
+
+
+/* Column Stuff*/
+#column{
+    display:flex;
+    float: right;
+}
+.box div{
+    margin:3%;
+}
+.box{
+    border: solid black;
+    width: auto;
+    margin-left:15%;
+}
